@@ -1,0 +1,37 @@
+{
+	"name": "@sgty/modals",
+	"version": "1.0.0",
+	"description": "simple declerative signals for react",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		}
+	},
+	"scripts": {
+		"build": "tsup ./lib/index.ts --format esm,cjs --dts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/react": "^19.0.10",
+		"@types/react-dom": "^19.0.4",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"tsup": "^8.4.0",
+		"typescript": "^5.8.2"
+	},
+	"peerDependencies": {
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0"
+	},
+	"dependencies": {
+		"@sgty/sigma": "^1.0.1",
+		"eventemitter3": "^5.0.1",
+		"uuid": "^11.1.0"
+	}
+}
